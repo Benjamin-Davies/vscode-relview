@@ -1,0 +1,25 @@
+{
+  "name": "vscode-relview",
+  "displayName": "RelView",
+  "description": "RelView language support.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "relview",
+      "aliases": ["RelView", "relview"],
+      "extensions": ["prog"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "relview",
+      "scopeName": "source.relview",
+      "path": "./syntaxes/relview.tmLanguage.json"
+    }]
+  }
+}
