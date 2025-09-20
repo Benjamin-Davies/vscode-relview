@@ -10,16 +10,41 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "relview",
-      "aliases": ["RelView", "relview"],
-      "extensions": ["prog"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "relview",
-      "scopeName": "source.relview",
-      "path": "./syntaxes/relview.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "relview",
+        "aliases": [
+          "RelView",
+          "relview"
+        ],
+        "extensions": [
+          "prog"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "relview-relation",
+        "aliases": [
+          "RelView Relation",
+          "relview-relation"
+        ],
+        "extensions": [
+          "ascii"
+        ],
+        "configuration": "./language-configuration.relation.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "relview",
+        "scopeName": "source.relview",
+        "path": "./syntaxes/relview.tmLanguage.json"
+      },
+      {
+        "language": "relview-relation",
+        "scopeName": "source.relview-relation",
+        "path": "./syntaxes/relview-relation.tmLanguage.json"
+      }
+    ]
   }
 }
